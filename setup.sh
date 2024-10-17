@@ -1,6 +1,6 @@
 # setup
 sudo apt update
-sudo apt install python3-pip
+sudo apt install python3-pip libgtk2.0-dev pkg-install
 pip3 install torch torchvision torchaudio
 pip3 install opencv-python pandas requests
 pip3 install matplotlib  # Optional, for visualization

@@ -50,7 +50,7 @@ def capture_data(camera_index):
     # Capture a single frame
     ret, frame = cap.read()
     if ret:
-        # Show the captured frame
+        # Show the captured frame. Remove the 2 lines below this for a headless env.
         cv2.imshow(f"Camera {camera_index}", frame)
         cv2.waitKey(1)  # Short wait to display the frame
         return frame  # Return the captured frame for further processing

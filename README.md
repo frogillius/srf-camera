@@ -1,7 +1,7 @@
 # TODO
 - Test new USB interface files.
 
-# USAGE (usb interface)
+# USAGE (usb interface) (roborio side)
 ```
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.DriverStation;

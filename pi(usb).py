@@ -25,12 +25,12 @@ def start_server(port='/dev/ttyUSB0', baudrate=115200):
             # Process the command and get a response
             response = process_command(data)
 
-            # Send the response back to the client
-            ser.write(response.encode())
+            # Send the response back to the RoboRIO
+            ser.write((response + "\n").encode())  # Append newline to denote end of message
             print(f"Sent response: {response}")
 
 def process_command(command):
-    """Process the received command using the new interface."""
+    """Process the received command and return the appropriate response."""
     command_map = {
         "gimme front": camData.get_front_data,
         "gimme back": camData.get_back_data,

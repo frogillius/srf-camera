@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo -e python pi(USB).py
+sudo -e python 'pi(USB).py'
